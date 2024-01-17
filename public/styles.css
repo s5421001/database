@@ -1,0 +1,57 @@
+/* public/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#championTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#championTable th, #championTable td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#championTable th {
+  background-color: #f2f2f2;
+}
+
+/* 以下、各セルの幅を調整するためのスタイルを追加 */
+
+#championTable th:nth-child(1),
+#championTable td:nth-child(1) {
+  width: 10%;
+}
+
+#championTable th:nth-child(2),
+#championTable td:nth-child(2){
+  background-color: #abbfea;
+  width: 30%;
+}
+#championTable th:nth-child(3),
+#championTable td:nth-child(3) {
+  background-color: #d8a2a2;
+  width: 30%;
+}
+#championTable th:nth-child(4),
+#championTable td:nth-child(4) {
+  width: 20%;
+}
+
+#championTable th:nth-child(5),
+#championTable td:nth-child(5),
+#championTable th:nth-child(6),
+#championTable td:nth-child(6) {
+  width: 10%;
+}

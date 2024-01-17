@@ -1,0 +1,49 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Champion Data Management</title>
+</head>
+<body>
+  <h1>Champion Data Management</h1>
+
+  <!-- フォームの追加 -->
+  <form id="championForm">
+    <label for="Me">Me:</label>
+    <input type="text" id="Me" name="Me" required>
+
+    <label for="Enemy">Enemy:</label>
+    <input type="text" id="Enemy" name="Enemy" required>
+
+    <label for="Com">Com:</label>
+    <select id="Com" name="Com" required>
+      <option value="有利">有利</option>
+      <option value="微有利">微有利</option>
+      <option value="五分">五分</option>
+      <option value="微不利">微不利</option>
+      <option value="不利">不利</option>
+    </select>
+
+    <label for="Push">Push:</label>
+    <input type="checkbox" id="Push" name="Push">
+
+    <label for="Wave">Wave:</label>
+    <input type="checkbox" id="Wave" name="Wave">
+
+    <button type="button" onclick="addChampion()">Add Champion</button>
+  </form>
+
+  <label for="searchInput">Search Enemy:</label>
+  <input type="text" id="searchInput" oninput="searchChampion()" placeholder="Enter enemy name">
+  <!-- チャンピオン一覧の表示 -->
+  <div id="championTableContainer">
+    <table id="championTable"></table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
